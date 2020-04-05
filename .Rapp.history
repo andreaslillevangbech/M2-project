@@ -1,0 +1,12 @@
+#test glmnet
+#test glmnet#
+library(reshape2)#
+library(tidyverse)#
+library(abind)#
+library(glmnet)#
+library(mvtnorm)#
+library(pls)
+load("/Users/alexanderbech/Dropbox/Project/MC.RData")
+ls()
+rm(list=ls())
+ls()

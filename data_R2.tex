@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{threeparttable}
+
+\begin{document}
+% latex table generated in R 3.6.0 by xtable 1.8-4 package
+% Tue Jun 11 16:37:23 2019
+\begin{table}[ht]
+\begin{threeparttable}
+\centering
+\setlength{\tabcolsep}{12pt}
+\caption{Comparison of Predictive $R^2$s for Machine Learning Algorithms in Simulations}
+\begin{tabular}{rrrrrrrrrrrrr}
+  \hline
+ & OLS & Ridge & Lasso & ENet & PCR & PLSR & GLM & RandomF & GBRT\\ 
+  \hline
+OOS & -21.60 & 1.22 & -2.51 & -3.16 & -7.21 & -13.55 & -19.95 & -9.59 & -3.60 \\
+IS & 9.29 & 3.70 & 3.69 & 3.70 & 4.70 & -1.08 & 3.69 & 12.42 & 9.89  \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+      \small
+      \item Note: Model performance on the data from @goyalwelch2008. Neural Networks are excluded as they did not come to a reasonable estimate. Data can be found at Amit Goyal's website http://www.hec.unil.ch/agoyal/.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+
+\end{document}
+

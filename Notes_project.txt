@@ -1,0 +1,8 @@
+To do list
+
+To read up on for defence:
+- Look through simulation study
+- Conditions for LLN in a pooled OLS regression with panel data
+- degress of freedom (elements)
+- Review methods
+

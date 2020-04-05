@@ -1,0 +1,77 @@
+\documentclass[]{article}
+
+\usepackage{threeparttable}
+
+\begin{document}
+
+\begin{table}[ht]
+\begin{threeparttable}
+\centering
+\setlength{\tabcolsep}{6pt}
+\caption{Comparison of Predictive $R^2$s for Machine Learning Algorithms in Simulations (unaltered)}
+\begin{tabular}{lrrrrcrrrr}
+DGP & \multicolumn{4}{c}{(a)} && \multicolumn{4}{c}{(b)} \\
+\hline\noalign{\smallskip}
+Parameter & \multicolumn{2}{c}{$P_c = 50$} & \multicolumn{2}{c}{$P_c = 100$}& & \multicolumn{2}{c}{$P_c = 50$} &  \multicolumn{2}{c}{$P_c = 100$} \\
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+$R^2(\%)$ & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & &\multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} \\ 
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+OLS & 10.11 & -1.30 & 12.90 & -3.79 && 6.87 & -5.73 & 9.45 & -8.82 \\ 
+Ridge & 8.06 & 1.47 & 9.35 & 1.01 && 4.56 & -0.19 & 5.54 & -0.15 \\ 
+Lasso & 8.12 & 2.61 & 9.37 & 1.86 && 4.54 & -0.43 & 5.60 & -0.03 \\ 
+ENet & 8.18 & 2.69 & 9.53 & 1.89 && 4.66 & -0.41 & 5.72 & -0.07 \\ 
+PCR & 7.46 & 0.08 & 8.32 & -0.04 && 4.23 & -0.68 & 4.97 & -0.72 \\ 
+PLSR & 7.38 & 0.27 & 8.51 & -0.16 && 3.67 & -1.98 & 4.50 & -3.36 \\ 
+GLM & 7.92 & 0.21 & 9.07 & 0.01 && 4.80 & -0.48 & 5.87 & -0.98 \\ 
+RandomF & 13.91 & 2.33 & 16.39 & 1.83 && 13.49 & 1.02 & 14.74 & 2.23 \\ 
+GBRT & 9.84 & 1.94 & 11.59 & 0.55 && 10.06 & 1.09 & 10.37 & 1.20 \\ 
+NN1 & -6.42 & 1.60 & -26.00 & -15.46 && -10.43 & -0.70 & -11.44 & -1.21 \\ 
+NN2 & -12.41 & 1.67 & -13.49 & 1.05 && -13.26 & -0.05 & -15.26 & -0.04 \\ 
+Oracle & 8.41 & 3.45 & 10.04 & 3.74 && 4.89 & 0.12 & 5.81 & -0.07 \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+      \small
+      \item Note: Table 1 except all Monte Carlo repetitions are kept.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+
+
+\begin{table}[ht]
+\begin{threeparttable}
+\centering
+\setlength{\tabcolsep}{6pt}
+\caption{Comparison of Predictive $R^2$s for Machine Learning Algorithms in Simulations (unaltered)}
+\begin{tabular}{lrrrrcrrrr}
+DGP & \multicolumn{4}{c}{(a)} && \multicolumn{4}{c}{(b)} \\
+\hline\noalign{\smallskip}
+Parameter & \multicolumn{2}{c}{$P_c = 50$} & \multicolumn{2}{c}{$P_c = 100$}& & \multicolumn{2}{c}{$P_c = 50$} &  \multicolumn{2}{c}{$P_c = 100$} \\
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+$R^2(\%)$ & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & &\multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} & \multicolumn{1}{c}{IS} & \multicolumn{1}{c}{OOS} \\ 
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+OLS & 10.11 & -1.30 & 12.90 & -3.79 && 6.87 & -5.73 & 9.45 & -8.82 \\ 
+Ridge & 8.06 & 1.47 & 9.35 & 1.01 && 4.56 & -0.19 & 5.54 & -0.15 \\ 
+Lasso & 8.12 & 2.61 & 9.37 & 1.86 && 4.54 & -0.43 & 5.60 & -0.03 \\ 
+ENet & 8.18 & 2.69 & 9.53 & 1.89 && 4.66 & -0.41 & 5.72 & -0.07 \\ 
+PCR & 7.46 & 0.08 & 8.32 & -0.04 && 4.23 & -0.68 & 4.97 & -0.72 \\ 
+PLSR & 7.38 & 0.27 & 8.51 & -0.16 && 3.67 & -1.98 & 4.50 & -3.36 \\ 
+GLM & 7.92 & 0.21 & 9.07 & 0.01 && 4.80 & -0.48 & 5.87 & -0.98 \\ 
+RandomF & 13.91 & 2.33 & 16.39 & 1.83 && 13.49 & 1.02 & 14.74 & 2.23 \\ 
+GBRT & 9.84 & 1.94 & 11.59 & 0.55 && 10.06 & 1.09 & 10.37 & 1.20 \\ 
+NN1 & -6.42 & 1.60 & -26.00 & -15.46 && -10.43 & -0.70 & -11.44 & -1.21 \\ 
+NN2 & -12.41 & 1.67 & -13.49 & 1.05 && -13.26 & -0.05 & -15.26 & -0.04 \\ 
+Oracle & 8.41 & 3.45 & 10.04 & 3.74 && 4.89 & 0.12 & 5.81 & -0.07 \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+      \small
+      \item Note: Table 1 except all Monte Carlo repetitions are kept.
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+
+\end{document}
+
